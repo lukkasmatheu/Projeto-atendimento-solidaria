@@ -1,0 +1,78 @@
+.textarea-block{
+    width: 100%;
+    position:fixed;
+    left:0;
+    background: var(--color-input-background);
+    top:90%;
+}
+
+#textarea-content{
+    display: flex;
+    align-items: center;
+}
+
+.textarea-block #caixa-mensagens{
+    width:88vw;
+    padding:0 10px;
+    margin:1rem 1.5rem 1rem 4rem;
+    border-radius: 0.8rem;
+}
+.textarea-block button{
+    width: 7rem;
+    height: 5rem;
+    color:var(--color-text-title);
+    margin-right: 1rem;
+}
+
+.textarea-block button img{
+    width: 3rem;
+    height: 2rem;
+    color:var(--color-primary);
+}
+
+#page-mensage{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 7rem;
+}
+
+.container-block {  
+    width: 90vw;
+    max-width: 700px;
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 2px 5px;
+    overflow-wrap:anywhere;
+}
+
+p{
+    color: #1f1a1a;
+}
+
+.darker {
+    border-color: #ccc;
+    background-color: #ddd;
+}
+  
+
+.container-block::after {
+   content: "";
+    clear: both;
+    display: table;
+}
+  
+
+  /* Style time text */
+  .time-right {
+    float: right;
+    color: #aaa;
+  }
+  
+  /* Style time text */
+  .time-left {
+    float: left;
+    color: #999;
+  }
