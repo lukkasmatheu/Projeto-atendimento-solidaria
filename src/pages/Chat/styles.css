@@ -14,6 +14,8 @@
 .textarea-block #caixa-mensagens{
     width:88vw;
     padding:0 10px;
+    color: #1f1a1a;
+    outline: none;
     margin:1rem 1.5rem 1rem 4rem;
     border-radius: 0.8rem;
 }
@@ -34,11 +36,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-bottom: 7rem;
+    margin: 7rem 0;
 }
 
 .container-block {  
-    width: 90vw;
+    
     max-width: 700px;
     border: 2px solid #dedede;
     background-color: #f1f1f1;
@@ -64,15 +66,18 @@ p{
     display: table;
 }
   
-
-  /* Style time text */
-  .time-right {
+.time-right {
     float: right;
     color: #aaa;
-  }
+}
   
-  /* Style time text */
-  .time-left {
+.time-left {
     float: left;
     color: #999;
-  }
+}
+
+@media(max-height:600px){
+    .textarea-block{
+        top:86%;
+    }
+}

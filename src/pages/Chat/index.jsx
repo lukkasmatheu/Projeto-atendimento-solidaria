@@ -13,11 +13,11 @@ class Chat extends React.Component {
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
     }
-  
+
     render() {
       return (
         <div>
-        <Header to="/helping"/>
+        <Header to="/helping" className="logo-header-fixed" />
           <Mensagens items={this.state.items} />
           <form onSubmit={this.handleSubmit}>
             <div className="textarea-block" is>
@@ -56,7 +56,6 @@ class Chat extends React.Component {
   }
   
 function Mensagens(props) {
-  // const data = new Date();
       return (
         <div id="page-mensage">
           {props.items.map(item => (
@@ -78,12 +77,4 @@ function Mensagens(props) {
       );
 }
 
-/*<div className="container"> 
-      <p>
-        {item.text}
-       </p>
-   <span class="time-right">{new Date().toLocaleTimeString()}</span> 
-</div>
-
-*/
 export default Chat;

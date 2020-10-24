@@ -25,11 +25,12 @@
     justify-content: center;
     text-decoration: none;
     color: var(--color-secundary);
+    border: 1px solid var(--color-secundary);
+    border-radius: 0.8rem;
 }
 
 .header-landing-page .login-button a:hover{
-    border: 1px solid var(--color-secundary);
-    border-radius: 0.8rem;
+    background: var(--color-primary-lighter) ;
 }
 
 .header-landing-page .login-button a img{
@@ -88,7 +89,7 @@
 }
 
 .buttons-container a.help{
-    background: var(--color-primary-lighter);
+    background:  var(--color-primary-light);
 }
 
 .buttons-container a.helping{
@@ -97,7 +98,8 @@
 }
 
 .buttons-container a.help:hover{
-    background: var(--color-primary-light);
+    background: 
+    var(--color-primary-lighter);
 }
 
 .buttons-container a.helping:hover{
@@ -113,8 +115,13 @@
     .logo-container{
         flex-direction: column;
     }
+    .logo-container h1{
+        font-size: large;
+    }
     .logo-container img{
+        width: 7rem;
         height:8rem;
+        margin-right: 5px;
     }
 }
 
