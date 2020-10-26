@@ -53,8 +53,7 @@ class Chat extends React.Component {
         text: ''
       }));
     }
-  }
-  
+}
 function Mensagens(props) {
       return (
         <div id="page-mensage">

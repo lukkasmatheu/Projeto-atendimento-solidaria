@@ -1,0 +1,53 @@
+.webcam-page-content{
+    position: fixed;
+    left:0;
+    top:53%;
+    transition: 0.3s;
+}
+
+.footer-page{
+    width: 100%;
+    height: 25vh;
+    background: var(--color-primary);
+    position:fixed;
+    left: 0;
+    top:86%;
+    transition: 0.3s;
+}
+.footer-page #button-flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-page .flex-btt{
+    display: flex;
+    flex-direction:column;
+    margin-top: 1rem;
+    margin-left:2.5rem;
+}
+
+.footer-page #button-flex button{
+    background: var(--color-primary);
+    border: none;
+}
+
+.active{
+    display: none;
+}
+
+@media(max-width:600px){
+    .webcam-page-content{
+        top:50%;
+    }
+}
+
+@media(max-height: 300px){
+    .webcam-page-content{
+        top:30%;
+    }
+    .footer-page{
+        top:75%;
+    }
+}

@@ -18,7 +18,7 @@ function Helping(){
                         <img src={chat} alt=""/>
                         <h3>CHAT</h3>
                     </Link>
-                    <Link to="/" id="grid-menu" className="grid-menu">
+                    <Link to="/videochat" id="grid-menu" className="grid-menu">
                         <div>
                             <img src={videochamada} alt=""/>
                             <h3>CHAMADA DE VIDEO</h3>
