@@ -11,7 +11,7 @@
     background: var(--color-primary);
     position:fixed;
     left: 0;
-    top:86%;
+    top:84%;
     transition: 0.3s;
 }
 .footer-page #button-flex{

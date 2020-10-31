@@ -2,8 +2,8 @@
     width: 100%;
     position:fixed;
     left:0;
-    background: var(--color-input-background);
-    top:90%;
+    background: rgb(87, 87, 87);
+    bottom: 0;
 }
 
 #textarea-content{
@@ -12,11 +12,11 @@
 }
 
 .textarea-block #caixa-mensagens{
-    width:88vw;
+    width:90vw;
     padding:0 10px;
     color: #1f1a1a;
     outline: none;
-    margin:1rem 1.5rem 1rem 4rem;
+    margin:1rem 1.5rem 1rem;
     border-radius: 0.8rem;
 }
 .textarea-block button{

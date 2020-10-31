@@ -27,7 +27,7 @@ class VideoChat extends React.Component {
     render() {
       return (
         <div>
-            <Header to="/helping" className="logo-header-fixed" />
+            <Header to={this.props.location.state.local} className="logo-header-fixed" />
             <div className={this.state.styleCamera}>
                 <Webcam
                     audio={this.state.audio}
@@ -52,7 +52,7 @@ class VideoChat extends React.Component {
       );
     }
   
-    handleChangeCam(e) {
+    handleChangeCam() {
         if(this.state.isActiveCam === false){
             this.setState(state => ({
                 styleCamera:"webcam-page-content",
@@ -69,7 +69,7 @@ class VideoChat extends React.Component {
         }
     }
   
-    handleChangeMic(e) {
+    handleChangeMic() {
         if(this.state.audio === false){
             this.setState(state => ({
                 audio: true,

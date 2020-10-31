@@ -13,11 +13,10 @@ class Chat extends React.Component {
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
     }
-
     render() {
       return (
         <div>
-        <Header to="/helping" className="logo-header-fixed" />
+        <Header to={this.props.location.state.local} className="logo-header-fixed" />
           <Mensagens items={this.state.items} />
           <form onSubmit={this.handleSubmit}>
             <div className="textarea-block" is>
@@ -69,10 +68,6 @@ function Mensagens(props) {
             </div>
           ))}
         </div>
-        
-
-
-
       );
 }
 
