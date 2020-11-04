@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../../components/header";
+import Header from "../../components/Header";
 
 import send from '../../assets/images/icons/seta-direita.svg';
 
@@ -21,7 +21,7 @@ class Chat extends React.Component {
           <form onSubmit={this.handleSubmit}>
             <div className="textarea-block" is>
               <div id="textarea-content">
-                <textarea
+                <input type="text"
                   id="caixa-mensagens"
                   onChange={this.handleChange}
                   value={this.state.text}
@@ -55,6 +55,22 @@ class Chat extends React.Component {
 }
 function Mensagens(props) {
       return (
+        <div>
+          <div id="page-mensage-received">
+          <div className="container-block" >
+              <p>
+                Ola como esta?
+              </p>
+              <span class="time-right">10:40:50 -  Voluntario</span> 
+          </div>
+          <div className="container-block" >
+              <p>
+                tudo bem?
+              </p>
+              <span class="time-right">10:40:52 -  Voluntario</span> 
+          </div>
+
+        </div>
         <div id="page-mensage">
           {props.items.map(item => (
             <div className="container-block darker" >
@@ -67,6 +83,7 @@ function Mensagens(props) {
               <span class="time-right">{item.id}</span> 
             </div>
           ))}
+        </div>
         </div>
       );
 }

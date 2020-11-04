@@ -1,6 +1,6 @@
 import React from 'react';
 import Webcam from 'react-webcam';
-import Header from "../../components/header";
+import Header from "../../components/Header";
 
 import imgMicro from '../../assets/images/icons/micro.svg';
 import imgCam from '../../assets/images/icons/cam.svg';

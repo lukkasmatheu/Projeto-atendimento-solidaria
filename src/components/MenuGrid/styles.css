@@ -41,7 +41,13 @@
          grid-template-columns: 1fr 1fr;
      }
  }
-   
+  
+ #span{
+    background: var(--color-secundary-dark) ;
+    padding: 3px 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+ }
  @media(max-width: 760px){
     #grid-menu img{
         width: 26.8rem;

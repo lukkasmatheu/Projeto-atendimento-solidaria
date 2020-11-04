@@ -1,3 +1,4 @@
+
 .textarea-block{
     width: 100%;
     position:fixed;
@@ -13,6 +14,7 @@
 
 .textarea-block #caixa-mensagens{
     width:90vw;
+    height: 5rem;
     padding:0 10px;
     color: #1f1a1a;
     outline: none;
@@ -31,19 +33,24 @@
     height: 2rem;
     color:var(--color-primary);
 }
+#page-mensage-received{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 7rem 0 0 0;
+}
 
 #page-mensage{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin: 7rem 0;
+    margin: 1rem 0.8rem 7rem;
 }
 
 .container-block {  
     
     max-width: 700px;
     border: 2px solid #dedede;
-    background-color: #f1f1f1;
     border-radius: 8px;
     margin: 10px;
     padding: 2px 5px;

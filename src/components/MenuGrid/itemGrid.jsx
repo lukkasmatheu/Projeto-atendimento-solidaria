@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import './styles.css';
 
 function ItemGrid(props){
-    const {link , text , imgMenu , description, active, to} = props;
+    const {link , text , imgMenu , description, active, to,span, spanClass} = props;
     const idMenu = "grid-menu" + active;
     return(
         <Link to={{
@@ -18,7 +18,7 @@ function ItemGrid(props){
         >
             <div>
                 <img src={imgMenu} alt={description}/>
-                <h3>{text}</h3>
+    <h3>{text} </h3> <span id={spanClass}>{span}</span>
             </div>
         </Link>
         );

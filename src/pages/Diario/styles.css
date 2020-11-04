@@ -1,4 +1,4 @@
-#page-helping{
+#page-diario{
     width: 100%;
     height:100vh;
     display: flex;
@@ -7,20 +7,19 @@
     background: var(--color-primary);
 }
 
-.help-grid{
-    grid-template-columns: 1fr 1fr !important;
-}
-
-#page-helping-content{
+#page-diario-content{
     display: flex;
     align-items: center;
     justify-content: center;
     background: var(--color-primary)
 }
 
+.diario{
+    grid-template-columns: 1fr 1fr !important;
+}
  
 @media(max-width: 760px){
-    #page-helping-content{
+    #page-diario-content{
         background: var(--color-primary);
     }
 }

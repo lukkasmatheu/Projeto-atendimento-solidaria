@@ -1,4 +1,4 @@
-#page-landing{
+.page-landing {
     width: 100vw;
     height:100vh;
     display: flex;
@@ -111,6 +111,82 @@
     margin-right: 1.4rem;
 }
 
+.login-desativado, .active{
+    display: none;
+}
+
+
+.login-#form{
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-text-in-primary);
+    background: var(--color-primary);
+    z-index: 1;
+}
+
+#loginId{
+    background: #FFFF;
+    display: flex;
+    width: 38rem;
+    height:30rem;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    border: 0;
+    border-radius: 8px;
+}
+
+
+
+#loginId #form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#invalid{
+    border: 1px solid red !important;
+}
+
+#form .field{
+    display: flex;
+    flex:1;
+    flex-direction:column;
+    margin-bottom: 15px;
+}
+
+#form input{
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+    color:black;
+    border: 1px solid black;
+}
+
+#form input:hover{
+    background: #d1d0d0;
+}
+
+#form #subButt{
+    padding: 7px 25px;
+    border-radius:8px;
+    border:0;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    background: #cfcfcf;
+    transition: 200ms;
+}
+
+#form #subButt:hover,
+#cad:hover{
+    background: #8d8c8c;
+}
+
 
 @media(max-width: 600px){
     .logo-container{
@@ -119,11 +195,14 @@
     .logo-container h1{
         font-size: large;
     }
-    #page-landing-content{
+    .container{
         height: 50vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+    .login-desativado, .active{
+        display: none;
     }
     .logo-container img{
         width: 7rem;

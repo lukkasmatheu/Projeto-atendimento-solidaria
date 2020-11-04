@@ -10,12 +10,16 @@ function Header(props)
 {
     let classHeader = "logo-container-header ";
     classHeader += props.className;
-    console.log(classHeader);
-
     return(
         <header className={classHeader}>
             <div id="back-arow">
-                <Link to={props.to} id="arow-back" className="back-page">
+                <Link to={{
+                    pathname: `${props.to}`,
+                    state:{
+                        loged: true
+                    }
+
+                }} id="arow-back" className="back-page">
                     <div>
                         <img src={back} alt="retornar a pagina anterior" id="back"/>
                     </div>

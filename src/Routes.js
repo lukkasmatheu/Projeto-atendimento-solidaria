@@ -5,6 +5,7 @@ import Helping from './pages/Helping/index';
 import Help from './pages/Help/index';
 import Landing from './pages/Landing/index';
 import VideoChat from './pages/VideoChat';
+import Diario from './pages/Diario';
 
 
 function Routes(){
@@ -15,6 +16,7 @@ function Routes(){
         <Route path="/chat" exact component= {Chat}/>
         <Route path="/videochat" exact component= {VideoChat}/>
         <Route path="/help" exact component= {Help}/>
+        <Route path="/diario" exact component= {Diario}/>
     </BrowserRouter>);
 }
 
