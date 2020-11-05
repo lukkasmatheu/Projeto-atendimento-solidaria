@@ -6,6 +6,8 @@ import Help from './pages/Help/index';
 import Landing from './pages/Landing/index';
 import VideoChat from './pages/VideoChat';
 import Diario from './pages/Diario';
+import Notes from './pages/Notes';
+import Anotacoes from './pages/Anotacoes';
 
 
 function Routes(){
@@ -17,6 +19,8 @@ function Routes(){
         <Route path="/videochat" exact component= {VideoChat}/>
         <Route path="/help" exact component= {Help}/>
         <Route path="/diario" exact component= {Diario}/>
+        <Route path="/objetivos" exact component= {Notes}/>
+        <Route path="/anotacoes" exact component= {Anotacoes}/>
     </BrowserRouter>);
 }
 

@@ -14,7 +14,7 @@ import "./styles.css";
 class Landing extends React.Component{
     constructor(props){
         super(props);
-        this.state = { isAutent: false , classLogin: 'login-desativado' , classLanding: 'page-landing', loged: false, text: '', invalid: ''};
+        this.state = { isAutent: false , classLogin: 'login-desativado' , classLanding: 'container', loged: false, text: '', invalid: ''};
         this.handleClick = this.handleClick.bind(this);
         this.handleClickLogin = this.handleClickLogin.bind(this);
         this.handleChange = this.handleChange.bind(this);
@@ -74,6 +74,7 @@ class Landing extends React.Component{
 
                         <h2>Login</h2>
                         <div id="form">
+                            <form onSubmit={this.handleClickLogin}>
                                 <div className="field">
                                     <label htmlFor="name">E-mail/Login</label>
                                     <input type="text" placeholder="Login" />
@@ -82,6 +83,7 @@ class Landing extends React.Component{
                                     <label htmlFor="password">Senha</label>
                                     <input type="password" placeholder="Senha" id={this.state.invalid} onChange={this.handleChange} />
                                 </div>
+                            </form>
                             <button id="subButt" onClick={this.handleClickLogin}>LOGIN</button>
                         </div>
                     </div>

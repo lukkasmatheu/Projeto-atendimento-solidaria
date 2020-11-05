@@ -4,9 +4,7 @@ import Header from "../../components/Header";
 import send from '../../assets/images/icons/seta-direita.svg';
 
 import './styles.css';
-
-
-class Chat extends React.Component {
+class Anotacoes extends React.Component {
     constructor(props) {
       super(props);
       this.state = { items: [], text: '' };
@@ -43,9 +41,10 @@ class Chat extends React.Component {
       if (this.state.text.length === 0) {
         return;
       }
+      const data = new Date();
       const newItem = {
         text: this.state.text,
-        id: 'anonimo -' +  new Date().toLocaleTimeString() 
+        id: data.getDate() +'/'+ data.getMonth() + '/' + data.getFullYear() + '  '+ new Date().toLocaleTimeString() 
       };
       this.setState(state => ({
         items: state.items.concat(newItem),
@@ -55,23 +54,7 @@ class Chat extends React.Component {
 }
 function Mensagens(props) {
       return (
-        <div>
-          <div id="page-mensage-received">
-          <div className="container-block" >
-              <p>
-                Ola como esta?
-              </p>
-              <span class="time-right">10:40:50 -  Voluntario</span> 
-          </div>
-          <div className="container-block" >
-              <p>
-                tudo bem?
-              </p>
-              <span class="time-left">10:40:52 -  Voluntario</span> 
-          </div>
-
-        </div>
-        <div id="page-mensage">
+        <div id="page-mensage">  
           {props.items.map(item => (
             <div className="container-block darker" >
               <p>
@@ -84,8 +67,7 @@ function Mensagens(props) {
             </div>
           ))}
         </div>
-        </div>
       );
 }
 
-export default Chat;
+export default Anotacoes;

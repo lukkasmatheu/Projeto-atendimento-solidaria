@@ -16,7 +16,7 @@ function Diario(){
             <Header to="/helping" className=""/>
             <div id="page-diario-content" >
                 <div id="menu-items" className="diario">
-                    <ItemGrid link="/dia" text= "Diario de Anotações" span="" spanClass = "" imgMenu={diary} description= "diario de anotações" active="" to="/helping"/>
+                    <ItemGrid link="/anotacoes" text= "Diario de Anotações" span="" spanClass = "" imgMenu={diary} description= "diario de anotações" active="" to="/helping"/>
                     <ItemGrid link="/objetivos" text="Lista de Objetivos" imgMenu={notacion} description= "Lista de objetivos" active="" to="/helping" />
                 </div> 
             </div>

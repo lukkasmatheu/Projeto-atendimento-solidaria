@@ -14,9 +14,6 @@
     background: var(--color-primary)
 }
 
-.diario{
-    grid-template-columns: 1fr 1fr !important;
-}
  
 @media(max-width: 760px){
     #page-diario-content{
