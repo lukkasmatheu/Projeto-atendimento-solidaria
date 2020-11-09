@@ -14,7 +14,7 @@ class Anotacoes extends React.Component {
     render() {
       return (
         <div>
-        <Header to={this.props.location.state.local} className="logo-header-fixed" />
+        <Header to="/diario" className="logo-header-fixed" />
           <Mensagens items={this.state.items} />
           <form onSubmit={this.handleSubmit}>
             <div className="textarea-block" is>
@@ -54,9 +54,9 @@ class Anotacoes extends React.Component {
 }
 function Mensagens(props) {
       return (
-        <div id="page-mensage">  
+        <div id="page-anotacoes">  
           {props.items.map(item => (
-            <div className="container-block darker" >
+            <div className="container-block-anotacoes darker" >
               <p>
 
               {item.text}

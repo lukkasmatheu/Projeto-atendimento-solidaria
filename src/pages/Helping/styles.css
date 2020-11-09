@@ -13,6 +13,10 @@
     justify-content: center;
     background: var(--color-primary)
 }
+#text-center{
+    display: flex;
+    justify-content: center;
+}
 
  
 @media(max-width: 760px){

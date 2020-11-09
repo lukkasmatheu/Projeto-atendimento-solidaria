@@ -19,6 +19,7 @@ class Help extends React.Component{
             return(
                 <div id="" className="page-helping"> 
                     <Header to="/" className=""/>
+                    <h2 id="text-center">Escolha a forma de atendimento</h2>
                     <div id="page-helping-content">
                         <MenuGrid active=" active" to="/help" span="" spanCl="" name="help-grid"/>
                     </div>
@@ -59,11 +60,11 @@ class Help extends React.Component{
                             <img src={imgLogin} alt=""/>
                         </div>
                     </div>
-                    <div className="bloco-text">
+                    <div className="bloco-text" id="contato">
                         <h3>Entre em contato</h3>
                         <p className="text">entre em contato e faça parte do nosso time de voluntarios</p>
-                        <a href=" tell: (41)9889175454">(41)98881-8187</a>
-                        <a href="mailto:ajuda@ajudasolidaria.com.br">Email</a>
+                        <a href=" tell: (41)9889175454" id="tell">(41)98881-8187</a>
+                        <a href="mailto:ajuda@ajudasolidaria.com.br" id="email">Email</a>
                     </div>
 
                 </div>

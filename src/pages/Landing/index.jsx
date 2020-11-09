@@ -14,7 +14,7 @@ import "./styles.css";
 class Landing extends React.Component{
     constructor(props){
         super(props);
-        this.state = { isAutent: false , classLogin: 'login-desativado' , classLanding: 'container', loged: false, text: '', invalid: ''};
+        this.state = { isAutent: false , classLogin: 'login-desativado' , classLanding: 'container', loged: false, text: '', invalid: '', atendimento:'Quero Ajudar'};
         this.handleClick = this.handleClick.bind(this);
         this.handleClickLogin = this.handleClickLogin.bind(this);
         this.handleChange = this.handleChange.bind(this);
@@ -65,7 +65,7 @@ class Landing extends React.Component{
                                 }}
                          className="helping">
                             <img src={imgCor} alt="Ajudar"/>
-                            Quero Ajudar
+                            {this.state.atendimento}
                         </Link>
                     </div>
                 </div>
@@ -106,6 +106,7 @@ class Landing extends React.Component{
                 isAutent: false,
                 classLanding: 'container',
                 invalid: '',
+                atendimento:'Realizar Atendimento',
                 loged: true
                 
           }));
